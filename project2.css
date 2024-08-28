@@ -22,8 +22,10 @@ nav{
     /* background-color: red; */
     grid-column: 1/3;
     display: flex;
+    margin-top: 10px;
     padding-left:60% ;
     font-size: 15px;
+    /* font-size: 1.4vw; */
     align-items: center;
 }
 #shopping-bag{
@@ -31,25 +33,32 @@ nav{
     height: 50px;
 }
 nav div{
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
+    padding: 0px 1.7vw;
 }
 #left-upper{
     /* background-color: red; */
-    padding-left: 100px;
-    font-size: 25px;
+    /* padding-left: 100px; */
+    padding-left: 8vw;
+    /* font-size: 25px; */
+    font-size: 2.1vw;
     font-weight: 500;
+    margin-top: 10px;
 }
 #left-para{
     /* background-color: red; */
+    font-size: 1.5vw;
     grid-column: 1;
-    padding: 50px 100px;
+    padding: 4vw 8vw;
     width: 70%;
 }
 .options {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.7vw;
     line-height: 35px;
     border-top: 2px solid black;  
-    margin-right: 60px;
+    /* margin-right: 60px; */
+    margin-right: 5vw;
     display: flex;
     justify-content: space-between;
 }
@@ -69,4 +78,47 @@ nav div{
     background-position: 0% 20%;
     background-size: cover;
     width: 100%;
+}
+@media(max-width:900px){
+    #container{
+        grid-template-rows: 10% 25% 25% 45%;
+    }
+}
+@media(max-width:800px){
+    #container{
+        grid-template-rows: 10% 22% 20% 53%;
+    }
+}
+@media(max-width:700px){
+    #container{
+        grid-template-rows: 10% 20% 18% 57%;
+    }
+}
+@media(max-width:600px){
+    nav{
+        padding-left: 50%;
+    }
+    .options a{
+        font-size: 10px;
+    }
+    #left-para{
+        font-size: 10px;
+    }
+
+    #left-upper{
+        grid-column: 1/3;
+        font-size: 15px;
+    }
+    #container{
+        grid-template-rows: 10% 20% 17% 57%;
+    }
+}
+@media(max-width:450px){
+    nav{
+        padding-left: 40%;
+        
+    }
+    #left-para{
+        padding: 1vw 8vw;
+    }
 }
